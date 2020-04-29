@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2-5</title>
+    </head>
+
+    <body>
+        <h3>5. HTML5 입력태그</h3> 
+        <!-- 사용자로부터 데이터를 입력받을 때 이용하는 태그. -->
+
+
+        <h4>★기본 입력태그</h4>
+        <form action="http://naver.com"> <!-- # : 비움. action = id, pw, login 결과 화면 -->
+            <input type="text" name="uid" placeholder="아이디 입력"> <br/>
+            <input type="password" name="pass" placeholder="비밀번호 입력"> <br/>
+            <input type="submit" value="로그인">
+            <!-- 입력을 하고 나서 action. get 방식이라 부름. 
+            type = password 하면 비번이 가려짐. text와의 차이점 확인 ㄱㄱ-->
+
+        </form>
+
+        <h4>★기타 입력태그</h4>
+        <form action="http://daum.net">
+            <h3>취미를 선택하세요.</h3>
+            <label><input type="checkbox" name="hb1" value="등산" > 등산</label>
+            <label><input type="checkbox" name="hb2" value="독서" > 독서</label>
+            <label><input type="checkbox" name="hb3" value="영화" > 영화</label>
+            <label><input type="checkbox" name="hb4" value="게임" > 게임</label>
+            <label><input type="checkbox" name="hb5" value="운동" > 운동</label>
+            <!-- text와 checkbox를 그룹화 하면 텍스트를 눌러도 check가 가능함. 그것을 
+            <label> </label> 사이에 만들어줌. 얘네만 제외하고 확인해보셈. -->
+
+            <h3>성별을 고르세요</h3>
+            <label> <input type ="radio" name="gender" value="남자" />남자</label>
+            <label> <input type ="radio" name="gender" value="여자" />여자</label>
+
+            <!-- 위 7줄, value 없는 것과 있는 것의 차이 확인해보기(action 창에서). -->
+
+            <h3>주소를 선택하세요.</h3>
+            <select name="addr">
+                <option>서울></option>
+                <option>대전></option>
+                <option>대구></option>
+                <option>부산></option>
+                <option>광주></option>
+            </select>
+
+            <h3>날짜를 고르세요.</h3>
+            <input type="date" name="date" />
+
+            <input type="submit" value="전송하기">
+
+
+        </form>
+
+        <h4>★post 전송</h4>
+        <form action="http://google.com" method="GET">
+            <h4>자기소개</h4>
+            <textarea name="myself" cols="30" rows="10"></textarea>
+            <input type="submit" value="전송하기">
+            <!-- textarea : 문장을 입력할 수 있는 form. 입력은 제한없이 할 수 있는데
+            action상의 주소 길이에는 제한이 있음. 그래서 method="POST"를 해줌. 그러면 action 상의 주소에는
+            아예 아무런 입력값이 표시되지 않는다. 즉 POST는 get 방식으로 전송되어지는 것임. 
+
+            
+<GET 과 POST의 차이>
+
+* get 방식
+
+- 적은 양의 정보를 서버로 전송하는것입니다.
+
+- 전송할 데이터들을 문자의 형태로 서버로 전송하기 때문에 URL상에 인수값이 붙어,
+
+  보안에 취악하다는 치명적인 단점이 있습니다. 
+
+- form 태그에서의 "get"방식은 웹서버로 데이터 전송시 서버의 처리가 늦어질 경우 중복해서 요청이
+
+   이루어 지는 문제점이 있습니다.
+
+
+* post 방식
+
+- 입력한 내용의 양에 제한없이 서버로 전송하는것입니다.
+- 전송할 데이터들을 파일의 형태로 서버로 전송하기 때문에 URL상에 나타다지 않음으로 보안에 뛰어난
+
+   장점이 있습니다.
+
+- form 태그에서의 "post"방식은 대체적으로 많이 사용하는 값입니다.
+
+-->
+        </form>
+
+
+
+    </body>
+</html>

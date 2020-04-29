@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>2-3</title>
+
+    </head>
+
+    <body>
+        <h3>3. HTML5 테이블(표) 태그</h3>
+        <table border="1"> <!-- border 속성. 하고 안하고의
+                                차이는 직접 확인해봐. -->
+            <tr>
+                <th>이름</th> <!-- ctrl + D 계속하면 여러개가 선택됨. 
+                                한 번에 여러가지 바꿀 때 유용함. 직접 해보셈  -->
+                <th>휴대폰</th> 
+                <th>주소</th>  <!-- th = table header -->
+            </tr>
+
+            <tr>
+                <td>정호영</td> 
+                <td>010-5004-6408</td>
+                <td>부산</td>  <!-- hd = table data-->
+            </tr>
+
+            <tr>
+                <td>박수오</td>
+                <td>010-1345-4567</td>
+                <td>붓산</td>
+            </tr>
+
+            <tr>
+                <td>이태훈</td>
+                <td>010-7787-7077</td>
+                <td>붓슨</td>
+            </tr>
+
+            <h4> 테이블 셀 병합</h4>
+            <table border="1">
+                <tr>
+                    <td colspan="2">1 x 1</td>
+                    <td rowspan="2">1 x 3</td>
+                    <td rowspan="5">1 x 4</td>
+                    <!-- colspan="n". n칸 옆 -->
+                    <!-- rowspan="n". n칸 밑 -->
+                    <!-- ctrl shit k : 한 줄 삭제-->
+                </tr>
+                <tr>
+                    <td>2 x 1</td>
+                    <td>2 x 2</td>
+                    <td>2 x 3</td>
+                </tr>
+                <tr>
+                    <td>3 x 1</td>
+                    <td>3 x 2</td>
+                    <td>3 x 3</td>
+                </tr>
+                <tr>
+                    <td>4 x 1</td>
+                    <td>4 x 2</td>
+                    <td>4 x 3</td>
+                </tr>
+                <tr>
+                    <td>5 x 3</td> <!-- 위에 맹키로 alt + ctrl
+                                        방향키는 다중커서 -->
+                </tr>
+            </table>
+
+
+
+
+
+
+
+        </table>
+    
+    
+    </body>
+</html>
